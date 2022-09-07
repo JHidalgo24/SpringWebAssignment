@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Step Two</title>
+</head>
+<body>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<div th:insert="fragments/_header :: header"></div>
+
+<div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Step Two</h1>
+    <p class=" fs-4">
+        Next, you are going to want to boil some water.</p>
+
+    <h4 style="color: #ffae42 "> ⚠️ Warning️</h4>
+    <p  class="fs-4">
+
+        I know a lot of people like to put the water directly into the
+        cup and then microwave it but this is extremely dangerous. Maruchan, Cup of Noodles, and many other ramen cups
+        use styrofoam cups that melt when placed in the microwave that leak into the water and into your food. These
+        chemicals are carcinogenic so do not do this. You may even use a microwave safe cup and put water in it for it
+        to boil but never put the water in the ramen cup then microwave </p>
+
+    <img class="img-fluid img-thumbnail"
+         th:src="@{/images/boilingwater.png}">
+</div>
+
+<div th:insert="fragments/_footer :: footer"></div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+</head>
+<body>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+<div th:insert="fragments/_header :: header"></div>
+
+
+<div class="h-100 bg-light border rounded-3 ">
+    <h1 class="display-5 fw-bold">Home</h1>
+    <p class=" pa-1 fs-4"> A lot of people love ramen, but it is crazy the amount of people that make it wrong or in
+        a way that might even give the cancer. In this tutorial I will show you how to make Maruchan ramen the correct way
+        without causing yourself illness in your 40s</p>
+   <span>
+       <img class="img-fluid img-thumbnail"
+            th:src="@{/images/ramenimage.jfif}"
+            alt="">
+   </span>
+
+
+</div>
+<div th:insert="fragments/_footer :: footer"></div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
